@@ -1,0 +1,26 @@
+SELECT * FROM table_name     # carregar dados
+
+SELECT * FROM table
+WHERE column >100;           # filtrar linhas
+
+SELECT column1, column2
+FROM table;                  # selecionar colunas
+
+SELECT * FROM table 
+ORDER BY column DESC;        # ordenar dados
+
+SELECT dept, COUNT(*)
+FROM emp GROUP BY dept;      # agrupar / agregar 
+
+SELECT COUNT(*) FROM table;    # contar linhas 
+
+SELECT AVG(Ssalary) FROM emp;    # média 
+
+SELECT SUM(sales) FROM data;     # soma
+
+SELECT DISTINCT column
+FROM table;                   # remover duplicatas
+
+SELECT * FROM A JOIN B
+ON A.id = B.id;            # unir tabelas
+
