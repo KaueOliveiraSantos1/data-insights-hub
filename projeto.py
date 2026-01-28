@@ -8,3 +8,10 @@ print(df['Quantidade'])   # selecionar, acessar ou criar uma coluna específica
 print(df.isnull().sum())   # mostra quantos nulos há em cada coluna
 print(df.dropna())          # remove linhas que contenham qualquer valor vazio
 df.drop_duplicates(inplace=True)     # remover duplicatas
+print(df.isnull().sum())     #Ver quantos valores nulos temos em cada coluna
+colunas_ = ['coluna', 'coluna', 'coluna', 'coluna', 'coluna']
+df[colunas_] = df[colunas_].fillna(0)         # Vendas: Se está vazio, faz sentido ser 0
+df['coluna'] = df['coluna'].fillna('Unknown')
+df['coluna'] = df['coluna'].fillna('Unknown')    # Textos: Substituir por "Unknown"
+
+
